@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en"> <!--root element-->
+<html lang="en" > <!--root element-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
 </head>
 <body>
-    <center><h1>This is my heading tag</h1></center>
+    <center><h1">This is my heading tag</h1></center>
     
     <br>
     <a href="https://www.google.com" target="_blank">Google</a> <!-- href is hypertext   target blank for new tab opening reference hyperlink or anchor tag -->
+    
     <a href="https://www.instagram.com"><b>Instagram</b></a>
     <ol type="I">
         <li>Home</li>  <!-- list item -->
@@ -17,16 +18,18 @@
         <li>About</li>
     </ol>
     <br>
-    <a href="https://www.youtube.com/watch?v=O9mRs45-CGw" title="Video file" target="_blank">Video is here</a>
+    <a href="https://www.youtube.com/watch?v=O9mRs45-CGw" title="Video file" target="_blank">Video here</a>
     <br>
-    <ul>
+    <p>यह एक HTML में हिंदी टेक्स्ट का उदाहरण है।</p>
+    <br>
+    <!-- <ul>
         <li>Home</li>
         <li>Contacts</li>
         <li>About</li>
     </ul>
-    <dl> <!-- data list -->
-        <dt><b>Coffee</b> </dt> <!-- data title -->
-        <dd>Cold coffee 40</dd> <!-- data description -->
+    <dl>  
+        <dt><b>Coffee</b> </dt> 
+        <dd>Cold coffee 40</dd> 
         <dd>Hot coffee 60</dd>
         <dd>Green coffee 100</dd>
         <br>
@@ -34,20 +37,96 @@
         <dd>Cold Tea 30</dd>
         <dd>Hot Tea 50</dd>
         <dd>Green Tea 90</dd>
-    </dl>
-    
-    <video width="500" controls loop> <!-- autoplay  -->
-        <source src="video.mp4">
+    </dl> -->
+<!--     
+    <video width="500" controls loop> 
+        <source src="vido.mp4">
     </video>
-
+<br>
     <audio controls  ><source src="audio.mp4">
 
-    </audio>
+    </audio> -->
+<br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, harum.</p>
     <!-- <h2>This is my h2 tag</h2>
     <h3>This is my h3 tag</h3>
     <h4>This is my h4 tag</h4>
     <h5>This is my h5 tag</h5>
     <h6>This is my h6 tag</h6> -->
-    
+
+    <table  border="3" style="width: 50%;">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Number</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td rowspan="2">J</td>
+            <td colspan="3">j@mail.com</td>
+            <td>1234</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>S</td>
+            <td>s@gmail.com</td>
+            <td>4567</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>R</td>
+            <td>r@gmail.com</td>
+            <td>7984</td>
+        </tr>
+    </table>
+
+
+    <br><br><br>
+
+    <form action="urltosite" method="post"> <!-- post for secure and get for insecure-->
+        <label for="1" style="color: red;">Name: </label>
+        <input type="text" placeholder="Enter the name" id="1" required autofocus > <br><br>
+        Email: <input type="email"   value="j@gmail.com" readonly > <br><br>
+        Password: <input type="password" placeholder="*********" > <br><br>
+        Gender: <input type="radio" name="m">male
+                <input type="radio" name=
+                "m">female <br><br>
+        language: <input type="checkbox">Hindi
+                  <input type="checkbox">English
+                  <input type="checkbox">Marathi <br><br>
+        date: <input type="date" disabled><br><br>
+        time: <input type="time"> <br><br>
+        Color: <input type="color"> <br><br>
+        File: <input type="file"> <br><br>
+        Range: <input type="range"> <br><br>
+        Number: <input type="number"> <br><br>
+        City: <select name="" id="">
+            <option value="">None</option>
+            <option value="">J</option>
+            <option value="">S</option>
+            <option value="">R</option>
+        </select>"<br><br>
+        Description: <Textarea cols="50" rows="4"></Textarea> <br><br>
+        <br><br>
+        <button type="reset">Reset</button>
+        <button>Submit</button>
+        
+        <br><br><br><br>
+    </form>
+    <h1>Hello this is <span style="color: blue;">JSR</span></h1>
+    <div>
+        html <progress id = "file" max = "100" value = "10" > </progress>
+        css <progress id = "file" max = "100" value = "10" > </progress>
+        JS <progress id = "file" max = "100" value = "10" > </progress>
+        Myself <progress></progress>
+        <br> <br><br><br>
+    </div>
+
+
+
+
+
+
 </body>
 </html>
