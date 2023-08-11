@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body style="text-align: center;">
+    <!-- <h1 id="h1"></h1>
+    <button id="btn">Click Me</button>
+    <button id="btn1">Red</button>
+    <button id="btn2">Green</button>
+    <button id="btn3">uppercase</button>
+    <button id="btn4">lowercase</button>
+    <button id="btn5">Reset</button> -->
+
+    <!-- <input id="inp" type="text">
+    <button id="sbt" type="submit">Submit</button> -->
+
+    <!-- <input type="number" id="nb">
+    <button id="sbt" type="submit">Submit</button> -->
+    <button id="show" >Image</button>
+    <img id="im" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4UK-VacVrppny4aGjzhWStSrcsP_6A1UdFvRLCMg&s" alt="img" style="display: none;">
+    <script>
+        /*document.getElementById("btn").onclick = function() {
+            document.getElementById("h1").innerHTML = " Welcome To The Internet"
+        };
+        document.getElementById("btn1").onclick = function() {
+            document.getElementById("h1").style.color = "red"
+        };
+        document.getElementById("btn2").onclick = function() {
+            document.getElementById("h1").style.color = "green"
+        };
+        document.getElementById("btn3").onclick = function() {
+            document.getElementById("h1").style.textTransform = "uppercase"
+        };
+        document.getElementById("btn4").onclick = function() {
+            document.getElementById("h1").style.textTransform = "lowercase"
+        };
+        document.getElementById("btn5").onclick = function() {
+            document.getElementById("h1").style.color = "black"
+            document.getElementById("h1").style.textTransform = "capitalize"
+        };*/
+        /*document.getElementById("sbt").onclick = function(){
+            let a = document.getElementById("inp").value
+            console.log(a)
+        }*/
+        /*
+        document.getElementById("sbt").onclick = function(){
+            let a = document.getElementById("nb").value
+            let i = 1
+            while(i<=a){
+                console.log(i)
+                i = i + 1
+            }
+        }*/
+         let x = 0
+        document.getElementById("show").onclick = function(){
+            if(x == 0){
+                document.getElementById("im").style.display="block"
+                x = x + 1
+            }
+            else{
+                document.getElementById("im").style.display="none"
+                x = x - 1
+            }
+        };
+    </script>
+</body>
+</html>
