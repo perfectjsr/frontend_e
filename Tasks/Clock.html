@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        body {
+            display: flex;
+            margin-top: 15vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        #digitalclock {
+            font-size: 10vh;
+            font-family:  "Digital-7 Mono", monospace;
+            letter-spacing: 0.05em;
+            width: fit-content;
+            height: 10vh;
+            text-align: center;
+            border: 1px solid white;
+            color: red;
+            text-shadow: 0 0 20px rgba(175, 10, 10, 1),  0 0 20px rgba(175, 10, 10, 0);
+            padding: 10px;
+            background-color: black;
+            background: radial-gradient(ellipse at center,  #380a0a  0%, #000000 70%);
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 3s;
+        }
+        #digitalclock:hover {
+            border: 0px solid transparent;
+        }
+
+        
+        #analogclockContainer {
+            position: relative;
+            margin: auto;
+            height: 15vw;
+            /*to make the height and width responsive*/
+            width: 15vw;
+            border: 10px solid white;
+            background-image: url('https://media.geeksforgeeks.org/wp-content/uploads/20210302161254/imgonlinecomuaCompressToSizeOmNATjUMFKw-300x300.jpg');
+            border-radius: 10px;
+            /*setting our background image*/
+            background-size: 100%;
+            cursor: pointer;
+            transition: all 3s;
+        }
+        #analogclockContainer:hover {
+            
+            border-radius: 500px;
+            border: 10px solid black;
+        }
+        
+        #hour,
+        #minute,
+        #second {
+            position: absolute;
+            background: black;
+            border-radius: 10px;
+            transform-origin: bottom;
+        }
+        
+        #hour {
+            width: 2.5%;
+            height: 25%;
+            top: 25%;
+            left: 48.85%;
+            opacity: 0.8;
+        }
+        
+        #minute {
+            width: 1.6%;
+            height: 30%;
+            top: 19%;
+            left: 48.9%;
+            opacity: 0.8;
+        }
+        
+        #second {
+            width: 1%;
+            height: 40%;
+            top: 9%;
+            left: 49.25%;
+            opacity: 0.8;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="digitalclock">8:10:45</div>
+    <br><br><br>
+    <div id="analogclockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+
+    <script>
+        /*                                                     Digital clock                                                      */
+        // Calling showTime function at every second
+        setInterval(showTime, 1000);
+
+        // Defining showTime funcion
+        function showTime() {
+            // Getting current time and date
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+
+            // Setting time for 12 Hrs format
+            if (hour >= 12) {
+                if (hour > 12) hour -= 12;
+                am_pm = "PM";
+            } else if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            hour =
+                hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime =
+                hour + ":" + min + ":" + sec + am_pm;
+
+            // Displaying the time
+            document.getElementById(
+                "digitalclock"
+            ).innerHTML = currentTime;
+        }
+
+        showTime();
+
+        /*                                                     Analog clock                                                      */
+        setInterval(() => {
+            d = new Date(); //object of date()
+            hr = d.getHours();
+            min = d.getMinutes();
+            sec = d.getSeconds();
+            hr_rotation = 30 * hr + min / 2; //converting current time
+            min_rotation = 6 * min;
+            sec_rotation = 6 * sec;
+        
+            hour.style.transform = `rotate(${hr_rotation}deg)`;
+            minute.style.transform = `rotate(${min_rotation}deg)`;
+            second.style.transform = `rotate(${sec_rotation}deg)`;
+        }, 1000);
+        
+    </script>
+</body>
+
+</html>

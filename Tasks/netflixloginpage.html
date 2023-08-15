@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: auto;
+            background-color: black;
+        }
+        .container {
+            height: 129vh;
+            width: 98.8vw;
+            display: flex;
+            flex-direction: row;
+            background:rgba(0,0,0,0.6) url(netflixbackground.png);
+        }
+        .login {
+            height: 76.74%;
+            width: 100%;
+        }
+        .head {
+            height: 10%;
+        }
+        .logoimg {
+            width: 10%;
+            height: 100%;
+        }
+        .mainbox {
+            height: 90%;
+            
+        }
+        .box {
+            width: 30%;
+            height: 92%;
+            background-color: black;
+            opacity: 0.85;
+            margin: auto;
+            display: flex;
+        }
+        .loginbox {
+            width: 70%;
+            height: 70%;
+            color: rgb(255, 255, 255);
+            margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .loginbox1 {
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .box1 {
+            height: 25%;
+        }
+        .box2 {
+            height: 42%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .emailinput {
+            width: 100%;
+            height: 30%;
+        }
+        .passwordinput {
+            width: 100%;
+            height: 30%;
+        }
+        .lgn {
+            height: 98%;
+            width: 98%;
+            font-size: medium;
+            color: white;
+            background-color: #333333;
+            border-radius: 5px;
+            outline: none;
+            border: 0px solid transparent ;
+        }
+        input::placeholder {
+            color: #8c8c81;
+            padding-left: 5%;
+        }
+        .box3 {
+            height: 25%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .signinbutton {
+            height: 60%;
+        }
+        button {
+            color: white;
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            border: 0px solid transparent ;
+            border-radius: 5px;
+            font-size: large;
+            font-weight: bolder;
+        }
+        .remem {
+            height: 25%;
+            display: flex;
+            flex-direction: row;
+            color: #8c8c81;
+        }
+        .rememme {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+        .help {
+            width: 50%;
+            text-align: right;
+            color: #8c8c81;
+        }
+        .loginbox2 {
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            color: #8c8c81;
+        }
+        .footer {
+            height: 30.26%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.7;
+            color: #8c8c81;
+        }
+        .ft {
+            width: 60%;
+            height: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .contact {
+            height: 15%;
+        }
+        .links {
+            height: 30%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+        }
+        .lnk {
+            height: fit-content;
+        }
+        .language {
+            height: 20%;
+            width: 100%;
+        }
+        .langbox {
+            width: 15%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid white;
+        }
+        select {
+            background-color: black;
+            color: #8c8c81;
+            border: 0px solid transparent;
+        }
+        a {
+            text-decoration: none;
+            color: #8c8c81;
+            cursor: pointer;
+        }
+        #Sup {
+            
+            color: white;
+        }
+        #more {
+            color: #1968b7;
+            font-size: medium;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h5 {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="head">
+                <div class="logoimg">
+                    <img src="https://imgs.search.brave.com/iMK0bpQOHFE9qAS6J2UI9mfJ97x8nhrepANtIF_PSds/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODBiNTdmY2Q5OTk2/ZTI0YmM0M2M1Mjku/cG5n" alt="Netflix Logo" width="100%" height="100%">
+                </div>
+            </div>
+            <div class="mainbox">
+                <div class="box">
+                    <div class="loginbox">
+                        <div class="loginbox1">
+                            <div class="box1">
+                                <h1>Sign In</h1>
+                            </div>
+                            <div class="box2">
+                                <div class="emailinput">
+                                    <input class="lgn" type="email" placeholder="Email or phone number" required>
+                                </div>
+                                <div class="passwordinput">
+                                    <input class="lgn" type="password" placeholder="Password" required>
+                                </div>
+                            </div>
+                            <div class="box3">
+                                <div class="signinbutton">
+                                    <button type="submit">Sign In</button>
+                                </div>
+                                <div class="remem">
+                                    <div class="rememme">
+                                        <div><input type="checkbox"></div>
+                                        <div>Remember Me</div>
+                                    </div>
+                                    <div class="help"><a href="#">Need Help?</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loginbox2">
+                            <div>New to Netflix? <a id="Sup" href="#">Sign up now.</a><h5>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a id="more" href="#">Learn more.</a></h5></div>
+                            
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="ft">
+                <div class="contact">
+                    Questions? Call <a href="#">000-800-919-1694</a>
+                </div>
+                <div class="links">
+                    <div class="lnk"><a href="#">FAQ</a></div>
+                    <div class="lnk"><a href="#">Help Centre</a></div>
+                    <div class="lnk"><a href="#">Terms of Use</a></div>
+                    <div class="lnk"><a href="#">Privacy</a></div>
+                    <div class="lnk"><a href="#">Cookie Preferences</a></div>
+                    <div class="lnk"><a href="#">Corporate Information</a></div>
+                </div>
+                <div class="language">
+                    <div class="langbox">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/></svg> 
+                        </div>
+                        <div>
+                            <select >
+                                <option >English</option>
+                                <option >Hindi</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
