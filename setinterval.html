@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <input type="text" id="nameInput" placeholder="Enter a name">
+  <button id="addNameButton">Add Name</button>
+  <button id="printNamesButton">Print Names</button>
+  <h1 id="namesOutput"></h1>
+  
+  <script>
+    const addNameButton = document.getElementById("addNameButton");
+    const printNamesButton = document.getElementById("printNamesButton");
+    const nameInput = document.getElementById("nameInput");
+    const namesOutput = document.getElementById("namesOutput");
+
+    const namesArray = [];
+
+    addNameButton.addEventListener("click", function() {
+      const newName = nameInput.value.trim();
+      if (newName !== "") {
+        namesArray.push(newName);
+        nameInput.value = "";
+      }
+    });
+
+    printNamesButton.addEventListener("click", function() {
+      let index = 0;
+      const intervalId = setInterval(function() {
+        if (index < namesArray.length) {
+          namesOutput.innerHTML += namesArray[index] + "<br>"; // Use '<br>' for new line
+          index++;
+        } else {
+          clearInterval(intervalId);
+        }
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

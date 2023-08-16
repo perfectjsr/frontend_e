@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" id="consol1">HTML</a>
+    <a href="#" id="consol2">CSS</a>
+    <a href="#" id="consol3">JAVASCRIPT</a>
+    <a href="#" id="consol4">DJANGO</a>
+    <script>
+        document.getElementById("consol1").onclick = function() {
+            event.preventDefault();
+            console.log("HTML")
+        }
+        document.getElementById("consol2").onclick = function() {
+            event.preventDefault();
+            console.log("CSS")
+        }
+        document.getElementById("consol3").onclick = function() {
+            event.preventDefault();
+            console.log("JAVASCRIPT")
+        }
+        document.getElementById("consol4").onclick = function() {
+            event.preventDefault();
+            console.log("DJANGO")
+        }
+    </script>
+
+</body>
+</html>

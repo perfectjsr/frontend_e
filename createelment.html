@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button type="submit" id="submit">Submit</button>
+    <h1 id="h1"></h1>
+    <script>
+        document.getElementById("submit").onclick = function() {
+            let out = document.getElementById("input").value;
+            document.getElementById("h1").innerHTML += out + "<br>";
+            out.value = "";
+        }
+    </script>
+</body>
+</html>
