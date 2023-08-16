@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-2</title>
+</head>
+<body>
+    <!-- <input type="text" class="consol">
+    <input type="text" class="consol">
+    <input type="text" class="consol">
+    <input type="text" class="consol">
+    <input type="text" class="consol">
+    <input type="text" class="consol">
+    <button type="submit" id="sbt">Submit</button> -->
+    <script>        
+             //querySelector(".consol")-to access a class    
+             //querySelector("#sbt")-to access a id   
+             //querySelector("submit")-to access one element  
+             //querySelectorAll("input")-to access multiple elements        
+        /*
+        document.getElementById("sbt").onclick = function() {
+            let a = document.getElementsByClassName("consol");
+            for ( i of a)                               //  similar to python loop   
+            {
+                console.log(i.value);
+            }
+        }*/
+        /*function add(a,b=5){    // here are parametwrs    //if call function was add(5) then b = 5 is used.
+            //console.log(`add {a + b}`) // output: add {a + b}
+            return `add ${a+b}`  // output: add 9      //    below esc button is ` backtick
+        }                              // return always return single value if it was return 1,2 then call function get 2
+        console.log(add(5,4)) // here are arguments
+        */
+        // annonymous function
+        let a = function(x,y) {
+            return x+y;
+        }
+        console.log(a(5,4))
+
+        
+        // arrow function          
+        let z = (x,y) => x*y
+        console.log(z(2,5))
+    </script>
+</body>
+</html>
