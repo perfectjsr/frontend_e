@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*let a = [10, 20, 30, 40, 50]
+        let i = 0
+        let sum = 0
+        while (i < a.length) {
+            sum = sum + a[i]
+            i++;
+        }
+        console.log(sum)
+        */
+        /*
+        let a = [10, 20, 30, 40, 50]
+        for(let i in a){
+            console.log(a[i]);
+        }
+        console.log(' ')
+        a.forEach(function(num)
+        {
+            console.log(num);                                 // callBack function
+        })
+        */
+
+         //                Array       
+         //let a = [10, 20, 30, 40, 50, 60]
+         //let last = a[4]
+         //let first = a[0]
+         /*
+         let x = a.pop()                                              // to remove the last element
+         let y = a.shift()                                            // to remove the first element
+         a.push(y)                                                    // to add from the last
+         a.unshift(x)                                                 // to add from the first
+         console.log(a)
+         */
+
+         //                                         slice and splice
+         //console.log(a.slice(1,4))
+         //a.splice(2,1,"J","S","R")                          // splice(index from which to start,number of elements to delete from this index, elements to add)
+         //a.splice(0,3)
+         //console.log(a)
+         //a.splice(3,3)
+         //console.log(a)
+
+         /*let b = a.map(function(item){
+            return item*2
+         })
+         console.log(b)*/
+         /*
+         //                                            map
+         c = [10,20,30,40,50,60,70,80,90,100]
+         let b = c.map(function(item){
+            if(item>=50){
+                return 'pass'
+            }
+            else {
+                return 'fail'
+            }
+         })
+         console.log(b)
+         */
+
+         /*
+           //                                         filter
+           let a = [10,20,30,40,50,60,70,80,90,100]
+           let c = a.filter((item)=>{
+            return item>50
+           })
+           console.log(c)
+           */
+           /*
+           //                                         reduce
+           let a = [10,20,30,40,50,60,70,80,90,100]
+           let c = a.reduce((a,b)=> {
+            return a+b
+           })
+           console.log(c)
+           */
+           /*
+           //                                       split :- for string to array
+           let a = "J,S,R"
+           console.log(a.split(","))
+           */
+           /*
+           //                                       join :- for array to string
+           let a = ["J","S","R"]
+           console.log(a.join(","))
+           */
+           //                                       flat :- multi to 1D array
+           let d = [['J','S','R'],['j','s','r']]
+           console.log(d.flat())
+           console.log(d[1][2])
+    </script>
+</body>
+
+</html>
