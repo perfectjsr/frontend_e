@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = [
+            {
+                id: 1,
+                name: "JSR",
+                age: 20,
+
+            },
+            {
+                id: 2,
+                name: "J",
+                age: 21,
+            },
+            {
+                id: 3,
+                name: "S",
+                age: 22,
+            },
+            {
+                id: 4,
+                name: "R",
+                age: 16,
+            },
+            {
+                id: 5,
+                name: "R",
+                age: 17,
+            },
+            {
+                id: 6,
+                name: "R",
+                age: 19,
+            },
+            {
+                id: 7,
+                name: "R",
+                age: 25,
+            },
+            {
+                id: 8,
+                name: "R",
+                age: 17,
+            },
+            {
+                id: 9,
+                name: "R",
+                age: 18,
+            },
+            {
+                id: 10,
+                name: "R",
+                age: 17,
+            },
+        ]
+            let g = obj.filter((item)=> {
+                return item.age > 20
+            });
+            for (i in g){
+                console.log(g[i])
+            }
+    </script>
+
+</body>
+
+</html>

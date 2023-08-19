@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="txt" type="text">
+    <button id="sbt" type="submit">Add names</button>
+    <button id="print" type="submit">Print</button>
+    <h1 id="h1"></h1>
+    <script>
+        let ar = []
+        document.getElementById("sbt").onclick = function () {
+            let out = document.getElementById("txt").value
+            if (out != "") {
+                ar.push(out)
+                document.getElementById("txt").value = "";
+                
+            }
+            console.log(ar)
+        }
+
+        document.getElementById("print").onclick = function () {
+
+            let i = 0
+            const a = setInterval(function () {
+                if (i < ar.length) {
+                    document.getElementById("h1").innerHTML += ar[i] + "<br>";
+                    i++;
+                }
+                else {
+                    clearInterval(a)
+                }
+            }, 2000)
+        }
+    </script>
+
+</body>
+
+</html>
