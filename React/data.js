@@ -49,7 +49,7 @@ const data = [
     }, 
     {
         id : 9,
-        name : "Devda",
+        name : "Devdas",
         desciption : "After his wealthy family prohibits him from marrying the woman he is in love with, Devdas Mukherjee's life spirals further and further out of control as he takes up alcohol and a life of vice to numb the pain.",
         year : 2002
     }, 
@@ -139,3 +139,6 @@ const data = [
     }, 
      
 ]
+for (let i in data){
+    console.log(data[i]+"\n");
+}
