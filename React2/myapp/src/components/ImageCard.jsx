@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 const ImageCard = (props) => {
   return (
     <div>
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem' ,height: '45rem' }}>
     <Card.Img variant="top" src= {props.imgurl} />
     <Card.Body>
     {props.id}
@@ -12,7 +12,7 @@ const ImageCard = (props) => {
       <Card.Text>
         {props.desc}
       </Card.Text>
-      <Button variant="primary">Get Details</Button>
+      <Button className='ImgButton' variant="primary">Get Details</Button>
     </Card.Body>
   </Card>
     </div>

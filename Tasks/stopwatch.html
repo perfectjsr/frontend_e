@@ -46,13 +46,14 @@
     </div>
     
     <button type="submit" id="sbt">Start</button>
+    <button type="submit" id="stp">Stop</button>
     <script>
         let ms = 0;
         let sec = 0;
         let min = 0;
         let hr = 0;
         document.getElementById("sbt").onclick = function() {
-            setInterval(() => {
+            let a = setInterval(() => {
                 ms += 1;
                 if(ms == 100)
                 {
@@ -60,14 +61,14 @@
                 }
                 document.getElementById("ms").innerHTML = ms
             },10)
-            setInterval(() => {
+            let b = setInterval(() => {
                 sec = sec + 1;
                 if(sec == 60){
                     sec = 0;
                 }
                 document.getElementById("sec").innerHTML = sec;
             },1000) 
-            setInterval(() => {
+            let c = setInterval(() => {
                 min += 1;
                 if(min == 60)
                 {
@@ -75,7 +76,7 @@
                 }
                 document.getElementById("min").innerHTML = min
             },60000)  
-            setInterval(() => {
+            let d = setInterval(() => {
                 hr += 1;
                 if(hr == 24)
                 {
@@ -84,6 +85,13 @@
                 document.getElementById("hr").innerHTML = hr
             },3600000) 
         } 
+        document.getElementById("stp").onclick = function() {
+            clearInterval()
+            document.getElementById("ms").innerHTML = 0;
+            document.getElementById("sec").innerHTML = 0;
+            document.getElementById("min").innerHTML = 0;
+            document.getElementById("hr").innerHTML = 0;
+        }
     </script>
 </body>
 </html>

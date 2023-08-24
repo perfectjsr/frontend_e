@@ -16,7 +16,7 @@ function App() {
       {
         data.map((obj)=>{
           return (
-            <div key={obj.id}>
+            <div key={obj.id} className='Imgbox'>
             <ImageCard  title={obj.title} desc={obj.desc} imgurl={obj.imgurl}/>
             </div>
           )

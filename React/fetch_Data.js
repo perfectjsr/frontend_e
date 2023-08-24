@@ -11,4 +11,4 @@ async function fetchdata(){
         console.error("Error fetching data: ",error)
     }
 }
-fetchdata()
+fetchdata
