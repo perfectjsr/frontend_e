@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+.imgs{
+  display: flex;
+  justify-content : space-evenly;
+  margin-top: 50px;
+  flex-Wrap: wrap;
+  
+}
+
+.myheading{
+  text-align:center;
+  margin-Top: 50px;
+  Font-size: 8vh;
+}
+
+.MyCarousel{
+  color: rgb(51, 0, 255);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
