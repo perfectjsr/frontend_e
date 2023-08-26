@@ -24,10 +24,9 @@ const MyCard = () => {
     return (
         <div>
             <Card className='card' >
-                <h1>{Count}</h1>
-                <Button onClick={HandleclickI}>Increase</Button>
-                <Button onClick={HandleclickD}>Decrease</Button>
-
+                <h1>The no. of movie tickets booked are : {Count}</h1>
+                <Button onClick={HandleclickI}>Increase(+1)</Button>
+                <Button onClick={HandleclickD}>Decrease(-1)</Button>
             </Card>
         </div>
     )
