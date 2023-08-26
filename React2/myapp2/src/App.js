@@ -28,7 +28,7 @@ function App() {
     <div>
       <NavBar />
       <HomeCarousel />
-      <h1 className='myheading'>23 BEST BOLLYWOOD MOVIES OF ALL TIME</h1>
+      <h1 className='myheading'>TOP BROWSED PRODUCTS FORM YOUR HISTORY</h1>
       <div className='imgs'>
         {
           Data.map((obj) => {
